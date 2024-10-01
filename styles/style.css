@@ -1,0 +1,577 @@
+:root {
+  --primary-pink: #be4174; /*Buttons, links, hover effects, and key highlights*/
+  --accent-green: #f5c28c; /* Secondary buttons, icons, or accent borders for contrast with pink elements */
+  --subtle-teal: #8cf1e3; /*Subtle decorative details, lines, dividers, or smaller text elements and links*/
+  /*Dark Theme Palette:*/
+  --text-white: #F9F3E3; /*text color, stars, and small decorative elements */
+  --background-dark: #62868D; /*Main background color for the entire website*/
+  /*Light Theme Palette:*/
+  --text-black: #62868D; /*text color, stars, and small decorative elements */
+  --background-light: #F9F3E3; /*Main background color for the entire website*/
+}
+
+.dark-theme {
+  color: var(--text-white);
+  background: var(--background-dark);
+}
+.light-theme {
+  color: var(--text-black);
+  background: var(--background-light);
+}
+
+/*NAVBAR start*/
+.top-bar {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.top-bar strong {
+  color: var(--primary-pink);
+  font-size: 22px;
+}
+.top-bar a {
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+}
+.light-theme .top-bar a:hover {
+  color: black;
+  cursor: pointer;
+}
+.light-theme .top-bar a {
+  color: var(--text-white);
+}
+.dark-theme .top-bar a:hover {
+  color: black;
+  cursor: pointer;
+}
+.dark-theme .top-bar a {
+  color: var(--text-black);
+}
+.top-bar .navBar-logo img {
+  width: 60px;
+}
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .top-bar .navBar-logo img {
+    width: 20px;
+  }
+  .top-bar strong {
+    font-size: 10px;
+  }
+  .top-bar a {
+    font-size: 8px;
+    margin: 0 2px;
+  }
+  .top-bar small {
+    display: none;
+  }
+}
+/*NAVBAR end*/
+
+/*HERO HEADER start*/
+section.heroHeader {
+  padding: 125px 0 25px 100px;
+  display: block;
+}
+.heroHeader img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.heroHeader h3 {
+  font-size: 50px;
+}
+
+.heroHeader h1 {
+  font-size: 120px;
+  margin: 0px 0;
+  color: #be4174;
+}
+.heroHeader h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.heroHeader a {
+  margin: 0 5px;
+}
+@media (max-width: 768px) {
+  section.heroHeader {
+    padding: 50px 20px;
+  }
+  .heroHeader h3 {
+    font-size: 16px;
+  }
+  .heroHeader h1 {
+    font-size: 25px;
+  }
+  .heroHeader h1 small {
+    font-size: 19px;
+  }
+  .heroHeader h2 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  .heroHeader a {
+    margin: 0 5px;
+  }
+}
+/*HERO HEADER end:*/
+
+/*BUTTONS starts*/
+.button-one {
+  background-color: #be4174; /* Primary Pink */
+  color: #ffffff; /* White text */
+  border: 2px solid #be4174; /* Border matches background */
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+.button-one:hover {
+  background-color: #ffffff; /* On hover, the background turns white */
+  color: #be4174; /* Text color changes to Primary Pink */
+  border: 2px solid #be4174; /* Border remains Primary Pink */
+}
+.button-two {
+  background-color: transparent; /* Transparent background */
+  color: #62868D; /* Accent Green text */
+  border: 2px solid #62868D; /* Accent Green border */
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+.button-two:hover {
+  background-color: #62868D; /* Background turns Accent Green on hover */
+  color: #ffffff; /* Text turns white on hover */
+}
+.theme-button {
+  display: block;
+  margin: 0;
+  padding: 5px; /* Small padding for clickable area */
+  font-size: 25px;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+.button-three {
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+  background-color: #8cf1e3; /* Main color */
+  color: #0a0a1e; /* Dark Navy for text */
+  border: 2px solid #8cf1e3; /* Border matches the background color */
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.button-three:hover {
+  background-color: #efeff1; /* White on hover */
+  color: #56a59a; /* Text changes to the main color */
+  border: 2px solid #8cf1e3; /* Keeps border color */
+  box-shadow: 0px 0px 15px 2px #8cf1e3; /* Glow effect */
+}
+@media (max-width: 768px) {
+  .theme-button {
+    margin: 0;
+    padding: 5px;
+    font-size: 8px;
+  }
+  .button-one {
+    padding: 6px 12.5px;
+    font-size: 10px;
+  }
+  .button-two {
+    padding: 6px 12.5px;
+    font-size: 10px;
+  }
+  .button-three {
+    padding: 6px 12.5px;
+    font-size: 15px;
+  }
+}
+/*BUTTONS end*/
+
+/*smallFooter start*/
+.small-footer {
+  margin-top: 60px;
+}
+.small-footer p {
+  opacity: 0.6;
+}
+.dark-theme .small-footer a {
+  color: var(--subtle-teal);
+  text-decoration: none;
+}
+.light-theme .small-footer a {
+  color: #dd1881;
+  text-decoration: none;
+}
+.small-footer img {
+  width: 20px;
+}
+@media (max-width: 768px) {
+  .small-footer {
+    margin: 60px 0;
+    font-size: 8px;
+  }
+  .small-footer img {
+    width: 10px;
+  }
+}
+/*smallFooter end*/
+
+/*Big-footer start*/
+.bigFooter {
+  padding: 0px 50px 0px 50px;
+}
+.bigFooter h6 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-top: 30px;
+}
+.bigFooter p {
+  font-size: 18px;
+}
+.bigFooter .icon-logo-link-footer {
+  color: var(--background-dark);
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+  cursor: pointer; /* Pointer to indicate it's clickable */
+  font-size: 25px;
+  margin: 0 10px;
+}
+.light-theme .bigFooter .icon-logo-link-footer {
+  color: var(--text-white);
+}
+.bigFooter .icon-logo-link-footer:hover {
+  color: #ff4da6; /* Change to Primary Pink on hover */
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+.bigFooter img {
+  display: block;
+  margin: 20px;
+  border: none;
+  width: 200px;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .bigFooter {
+    padding: 5px 0 20px 60px;
+  }
+  .bigFooter h6 {
+    font-size: 25px;
+  }
+  .bigFooter p {
+    font-size: 10px;
+  }
+  .bigFooter .icon-logo-link-footer {
+    font-size: 16px;
+  }
+
+  .bigFooter img {
+    width: 250px;
+  }
+}
+/*Big-footer end*/
+
+/*PROJECTS-page start*/
+.project-page {
+  margin: 60px 100px;
+}
+.project-page h2 {
+  font-size: 40px;
+}
+.project-page img {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 400px;
+}
+.project-page .project-page-intro {
+  margin-bottom: 50px;
+}
+.project-page .project-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.project-page .project-box {
+  background-color: var(--background-light);
+  color: #000000;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: transform 0.3s ease;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.project-page .project-box:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.03);
+}
+.project-page .project-box .project-box-content h3 {
+  font-size: 22px;
+  margin: 5px;
+  text-align: center;
+}
+.project-page .project-box .project-box-content p.tools {
+  margin: 0 8px 15px 8px;
+  padding: 0;
+  line-height: 9px;
+}
+.project-page .project-box .project-box-content p.tools span {
+  font-size: 10px;
+  background-color: var(--subtle-teal);
+  color: var(--text-black);
+  border-radius: 5px;
+  text-align: center;
+}
+.project-page .project-box .project-box-content p {
+  margin: 8px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 12px;
+  opacity: 0.8;
+}
+.project-page .project-box .project-box-content .project-page-icon {
+  color: var(--text-black);
+  margin: 0 5px 0 8px;
+  opacity: 0.8;
+  font-size: 15px;
+  text-align: end;
+}
+.project-page .project-box .project-box-content .project-page-icon:hover {
+  color: var(--accent-green);
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+.project-page .project-box .project-box-content .project-snap {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-page .project-box .project-box-content .project-snap img {
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+@media (max-width: 768px) {
+  .project-page {
+    margin: 30px 20px;
+  }
+  .project-page img {
+    max-width: 60%;
+  }
+  .project-page h2 {
+    font-size: 20px;
+  }
+  .project-page .project-page-intro p {
+    font-size: 8px;
+  }
+  .project-page .project-page-intro {
+    margin-bottom: 30px;
+  }
+  .project-page .project-box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .project-page .project-box .project-box-content h3 {
+    font-size: 16px;
+  }
+  .project-page .project-box .project-box-content p.tools span {
+    font-size: 8px;
+  }
+  .project-page .project-box .project-box-content p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .project-page .project-box .project-box-content .project-page-icon {
+    font-size: 15px;
+  }
+}
+/*PROJECTS-page end*/
+
+
+/*ABOUT-page start*/
+.about-page {
+  margin: 60px 100px;
+}
+.about-page h2 {
+  font-size: 80px;
+  margin-bottom: 15px;
+}
+.about-page h3 {
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+.about-page h4 {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.about-page p {
+  font-size: 20px;
+}
+.about-page p.quote {
+  font-size: 30px;
+  font-style: italic;
+  margin: 30px;
+  text-align: center;
+}
+.about-page img {
+  display: block;
+  margin: 60px 0 0 0;
+}
+.about-page .button-one {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 0;
+}
+.about-page .cv-button {
+  margin: 40px 0;
+}
+.about-page .cv-button a {
+  margin: 0 10px;
+}
+.about-page h5 {
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 60px;
+}
+.about-page p.tools-skills {
+  font-size: 16px;
+  padding: 0 30px;
+}
+#type-effect::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .about-page {
+    margin: 30px 20px;
+  }
+  .about-page h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .about-page h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .about-page h4 {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  .about-page p {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 10px;
+  }
+  .about-page p.quote {
+    font-size: 13px;
+    margin: 30px 10px;
+  }
+  .about-page img {
+    margin: 30px 0 0 0;
+  }
+  .about-page .button-one {
+    font-size: 8px;
+  }
+  .about-page .cv-button {
+    margin: 20px 0;
+  }
+  .about-page .cv-button a {
+    margin: 3px 10px;
+    font-size: 8px;
+    padding: 0;
+  }
+  .about-page h5 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+  .about-page p.tools-skills {
+    font-size: 6px;
+    padding: 0 5px;
+  }
+}
+/*ABOUT-page end*/
+
+/*Contact-page start*/
+.contact-page {
+  margin: 50px 100px;
+}
+.contact-page h2 {
+  font-size: 45px;
+  
+}
+.contact-page h4 {
+  margin-top: 30px;
+}
+.contact-page i {
+  font-size: 30px;
+  margin: 10px;
+}
+.contact-page .icon-logo-link {
+  color: #828b98; /* Default color (Accent Green) */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+  cursor: pointer; /* Pointer to indicate it's clickable */
+}
+.contact-page .icon-logo-link:hover {
+  color: #ff4da6; /* Change to Primary Pink on hover */
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+@media (max-width: 768px) {
+  .contact-page {
+    margin: 30px 20px;
+  }
+  .contact-page h2 {
+    font-size: 25px;
+  }
+  .contact-page p {
+    font-size: 8px;
+    margin-bottom: 0;
+  }
+  .contact-page i {
+    font-size: 12px;
+    margin: 5px;
+  }
+  .contact-page h4 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
+Contact-page end

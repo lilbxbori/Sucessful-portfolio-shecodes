@@ -143,9 +143,9 @@ section.heroHeader {
   border: 2px solid #be4174; /* Border remains Primary Pink */
 }
 .button-two {
-  background-color: transparent; /* Transparent background */
-  color: #62868D; /* Accent Green text */
-  border: 2px solid #62868D; /* Accent Green border */
+  background-color: #be4174; 
+  color: #ffffff; 
+  border: 2px solid #be4174; 
   padding: 12px 25px;
   border-radius: 5px;
   font-size: 16px;
@@ -155,8 +155,8 @@ section.heroHeader {
   text-decoration: none;
 }
 .button-two:hover {
-  background-color: #62868D; /* Background turns Accent Green on hover */
-  color: #ffffff; /* Text turns white on hover */
+  background-color: #ffffff; /* Background turns Accent Green on hover */
+  color: #be4174; /* Text turns white on hover */
 }
 .theme-button {
   display: block;
@@ -217,7 +217,7 @@ section.heroHeader {
   opacity: 0.6;
 }
 .dark-theme .small-footer a {
-  color: var(--subtle-teal);
+  color: var(--primary-pink);
   text-decoration: none;
 }
 .light-theme .small-footer a {
@@ -254,7 +254,7 @@ section.heroHeader {
   color: var(--background-dark);
   text-decoration: none; /* Remove underline */
   transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
-  cursor: pointer; /* Pointer to indicate it's clickable */
+  cursor: pointer; 
   font-size: 25px;
   margin: 0 10px;
 }
@@ -262,8 +262,7 @@ section.heroHeader {
   color: var(--text-white);
 }
 .bigFooter .icon-logo-link-footer:hover {
-  color: #ff4da6; /* Change to Primary Pink on hover */
-  transform: scale(1.1); /* Slight zoom-in effect */
+  color: #ff4da6;   transform: scale(1.1); 
 }
 .bigFooter img {
   display: block;
@@ -294,7 +293,7 @@ section.heroHeader {
 
 /*PROJECTS-page start*/
 .project-page {
-  margin: 60px 100px;
+  margin: 60px 70px;
 }
 .project-page h2 {
   font-size: 40px;
@@ -545,14 +544,14 @@ section.heroHeader {
   margin: 10px;
 }
 .contact-page .icon-logo-link {
-  color: #828b98; /* Default color (Accent Green) */
+  color: WHITE; 
   text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
-  cursor: pointer; /* Pointer to indicate it's clickable */
+  transition: color 0.3s ease, transform 0.3s ease; /
+  cursor: pointer; 
 }
 .contact-page .icon-logo-link:hover {
-  color: #ff4da6; /* Change to Primary Pink on hover */
-  transform: scale(1.1); /* Slight zoom-in effect */
+  color: #ff4da6; 
+  transform: scale(1.1); /
 }
 @media (max-width: 768px) {
   .contact-page {
@@ -574,4 +573,3 @@ section.heroHeader {
     font-size: 15px;
   }
 }
-Contact-page end
